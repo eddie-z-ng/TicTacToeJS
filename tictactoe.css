@@ -1,0 +1,151 @@
+body {
+	background: #F5FFFA;
+	background-image:url(background.png);
+	background-repeat:repeat-x repeat-y;
+}
+
+h1 {
+	color: #5F9EA0;
+	text-align: center;
+}
+
+.controlblock {
+	width: 220px;
+	height: 550px;
+	position: relative;
+	float: left;
+	display: block;
+	padding:20px 4px 4px 4px;
+	border: 1px solid rgba(0,255,127,.5);
+	margin-left:20px;
+	background-color: rgba(106,90,205,.5);
+	-webkit-border-radius: 6px !important;
+	border-radius: 6px !important;
+}
+
+#gameOverText {
+	width: 200px;
+	height: 100%;
+	position: relative;
+	float: left;
+	margin-left: 50px;
+}
+
+#playerSelect {
+	width: 180px;
+	height: 100px;
+	margin-top: 20px;
+	float: left;
+}
+
+#playername {
+	height: 50px;
+	width: 190px;
+	margin-bottom:50px;
+	float:left;
+	font-size: 18px;
+}
+
+#difficultyname {
+	height: 50px;
+	width: 190px;
+	margin-bottom:50px;
+	float:left;
+	font-size: 18px;
+}
+
+#scoreboard {	
+	width: 200px;
+	height: 100px;
+	margin-top: 10px;
+	margin-left: 50px;
+	position: relative;
+	float: left;
+	border: 2px solid rgba(0,255,127,.5);
+	background-color: rgba(106,90,205,.5);
+	-webkit-border-radius: 6px !important;
+	border-radius: 6px !important;
+}
+
+table {
+	width: 200px;
+	height: 100px;
+	text-align: center;
+	font-weight: bold;
+	color: #ccc;
+}
+
+td {
+	height: 50%;
+	width: 50%;
+	border-top: 5px solid #5F9EA0;
+}
+
+.gameboard {
+	margin-left: 80px;
+	width: 600px;
+	height: 600px;
+	position: relative;
+	float: left;
+	border: 0px;
+	padding: 0px;
+	display: block;
+}
+
+.rows {
+	float: left;
+	height: 196px;
+	width: 596px;
+	display: block;
+	border: 2px;
+	padding:0px;
+	margin:0px;
+}
+
+.tile {
+	width: 190px;
+	height: 190px;
+	float: left;
+	padding: 0px;
+	border: 2px dashed #5F9EA0;
+	margin: 2px;
+}
+
+.hover_add:hover {
+    background: rgba(150,130,250,.25);
+	color: #3fa;
+}
+
+.playerX {
+	/*background: #191970;-->*/
+	background-image:url(playerXT.png);
+}
+
+.playerO {
+	/*background: #BA55D3;*/
+	background-image:url(playerOT.png);
+}
+
+#p1wins { 
+	font-size: 18px;
+	font-weight: bold;
+	color: #00FF7F;
+}
+
+#p1losses {
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFA07A;
+}
+
+#p1draws {
+	font-size: 18px;
+	font-weight: bold;
+	color: #00BFFF;
+}
+
+div .footer {
+	width: 500px;
+	float: bottom;
+	text-align: center;
+}
