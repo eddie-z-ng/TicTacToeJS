@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Tic Tac Toe </title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script type="text/javascript" src="tictactoe.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css">
+	<link rel="stylesheet" href="tictactoe.css">
+</head>
+<body>
+	<h1>Tic Tac Toe</h1>
+
+	<div class="controlblock" id="scoreblock">
+		<div id="gamecontrols">
+			<input class="bigButton" type="button" id="startButton" value="New Game Start"/>
+			<div id="playerSelect">
+				<input type="radio" id="radio1" name="players" checked="checked"/><label for="radio1">Player X</label>
+				<input type="radio" id="radio2" name="players"/><label for="radio2">Player O</label>
+			</div>
+			<div id="difficultySelect">
+				<input type="radio" id="radioE" name="difficulty" checked="checked"/><label for="radioE">EASY</label>
+				<input type="radio" id="radioN" name="difficulty"/><label for="radioN">NORMAL</label>
+				<input type="radio" id="radioH" name="difficulty"/><label for="radioH">HARD</label>
+			</div>
+		</div>
+		
+		<div id="playername" class="ui-widget">
+			<div class="ui-state-highlight ui-corner-all" style="margin-top: 5px; padding: 0 .7em;">
+			<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>test</p>
+			</div>
+		</div>
+		<div id="difficultyname" class="ui-widget">
+			<div class="ui-state-highlight ui-corner-all" style="margin-top: 5px; padding: 0 .7em;">
+			<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>test</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="gameboard" id="board">
+		<div class="rows" id="row1"><span class="tile" id="tile0"> </span><span class="tile" id="tile1"> </span><span class="tile" id="tile2"> </span></div>
+		<div class="rows" id="row2"><span class="tile" id="tile3"> </span><span class="tile" id="tile4"> </span><span class="tile" id="tile5"> </span></div>
+		<div class="rows" id="row3"><span class="tile" id="tile6"> </span><span class="tile" id="tile7"> </span><span class="tile" id="tile8"> </span></div>
+	</div>
+	
+	<div id="scoreboard">
+			<table>
+				<tr>
+					<td> WINS </td><td> LOSSES </td> <td> DRAWS </td>
+				</tr>
+				<tr> <td id="p1wins">0</td> <td id="p1losses">0</td> <td id="p1draws">0</td></tr>
+			</table>
+	</div>
+	
+	<div id="gameOverText" class="ui-widget">
+		<div class="ui-state-highlight ui-corner-all" style="margin-top: 5px; padding: 0 .7em;">
+		<p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>test</p>
+		</div>
+	</div>
+	
+</body>
+
+
+</html>
